@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: test-service
+  rabbitmq:
+    host: 10.0.1.16
+    port: 5672
+server:
+  servlet:
+    context-path: /test
+  port: 9001
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_ADDRESS}

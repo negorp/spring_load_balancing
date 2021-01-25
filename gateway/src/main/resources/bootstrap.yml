@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: test-service
+          uri: lb://test-service
+          predicates:
+            - Path=/test/**
+server:
+  port: 9000
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_ADDRESS}
