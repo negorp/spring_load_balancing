@@ -16,3 +16,4 @@
 
 - mvn -pl test-service spring-boot:run -Dspring-boot.run.arguments=--EUREKA_SERVER_ADDRESS=http://localhost:8761/eureka -Dspring-boot.run.jvmArguments=-Dserver.port=9002
 
+
